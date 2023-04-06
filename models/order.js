@@ -12,6 +12,10 @@ const orderSchema = new Schema ({
     amount: {
         type: Number,
         required: true
+    },
+    isPaid: {
+        type: Boolean,
+        default: false
     }
 })
 

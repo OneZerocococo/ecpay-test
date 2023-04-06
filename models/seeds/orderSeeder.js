@@ -11,8 +11,8 @@ db.on('error', () => {
 })
 db.once('open', () => {
   console.log('mongodb connected!')
-  for (let i = 0; i < 10; i++) {
-    Order.create({name:`name-${i}`, amount: 100})
+  for (let i = 11; i < 20; i++) {
+    Order.create({name:`name-${i}`, amount: 100 + i})
   }
   console.log('seed done')
 })
